@@ -156,7 +156,7 @@
     <div id="root"></div>
     <script>
       // Check if the data exists in Local Storage
-      if (!localStorage.getItem('userData')) {
+      if (!localStorage.getItem('@user')) {
         // Data does not exist, add it to Local Storage
         const userData = {
           id: 1,
@@ -172,7 +172,7 @@
           fire: 15,
           coins: 150,
         };
-        localStorage.setItem('userData', JSON.stringify(userData));
+        localStorage.setItem('@user', JSON.stringify(userData));
       }
     </script>
     <script src="/static/js/runtime~app.27401809.js"></script>
