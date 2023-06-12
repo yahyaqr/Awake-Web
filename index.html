@@ -154,6 +154,27 @@
       </form></noscript
     >
     <div id="root"></div>
+    <script>
+      // Check if the data exists in Local Storage
+      if (!localStorage.getItem('userData')) {
+        // Data does not exist, add it to Local Storage
+        const userData = {
+          id: 1,
+          fullname: 'Yahya Aqrom',
+          email: 'aqrom.yahya75@gmail.com',
+          password: '1234567890',
+          age: 23,
+          gender: 'Male',
+          trialLength: 300,
+          lapseThreshold: 500,
+          showInstructions: true,
+          brain: 10,
+          fire: 15,
+          coins: 150,
+        };
+        localStorage.setItem('userData', JSON.stringify(userData));
+      }
+    </script>
     <script src="/static/js/runtime~app.27401809.js"></script>
     <script src="/static/js/2.10dc35a8.chunk.js"></script>
     <script src="/static/js/app.9a607dae.chunk.js"></script>
